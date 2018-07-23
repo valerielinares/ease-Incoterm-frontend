@@ -1,0 +1,11 @@
+
+    <li *ngFor="let oneIcc of iccArray"> 
+      <h3> {{oneIcc.iccShortCode}} </h3>
+      <a [routerLink]="['/icclist', oneIcc._id]"> See Definition </a>
+    </li>
+
+    <div class="blockIcc"> 
+      <p> icc-list works! </p>
+    </div>
+      
+ 

@@ -1,0 +1,10 @@
+.blockSelect {
+  height:130px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  border: 2px #4b8092;
+  background-color: white;
+  border-radius: 20px;
+  }

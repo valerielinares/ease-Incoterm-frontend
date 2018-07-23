@@ -1,0 +1,11 @@
+
+.blockIcc {
+  height:80px;
+  width: 80px;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: nowrap;
+  border: 2px, #4b8092;
+  background-color: white;
+  border-radius: 20px;
+}

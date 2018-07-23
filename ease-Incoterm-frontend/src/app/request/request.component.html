@@ -1,0 +1,13 @@
+
+<div class="blockQuestion"> 
+
+  <h4>
+        <span *ngIf="myAuthServ.currentUser">
+        Now that you are logged in,  {{myAuthServ.currentUser.firstName}}  {{myAuthServ.currentUser.lastName}}, please type in your question:
+        </span>
+  </h4>
+
+<form (ngSubmit)=""
+ 
+    <textarea> type="text" name="question" </textarea>
+</div> 
