@@ -13,7 +13,7 @@ export class RequestComponent implements OnInit {
 
   constructor(
     private myRequestServ: RequestService,
-    private myAuthServ: AuthService,
+    public myAuthServ: AuthService,
     private myRouterServ: Router
   ) { }
 
