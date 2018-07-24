@@ -1,16 +1,26 @@
 
-<div class="blockQuestion"> 
-  request works
 
-<!--   <h4>
+   <h4>
         <span *ngIf="myAuthServ.currentUser">
-        Now that you are logged in,  {{myAuthServ.currentUser.firstName}}  {{myAuthServ.currentUser.lastName}}, please type in your question:
+        Dear {{myAuthServ.currentUser.firstName}} {{myAuthServ.currentUser.lastName}}, please type in your question:
         </span>
   </h4>
 
-<form (ngSubmit)=""> 
+  <form (ngSubmit)="questionSubmit()"> 
+    <label> 
+      <h5> Your question here: </h5>
+      
+      <textarea [(ngModel)]="requestForm.question" type="text" name="question" placeholder="10 to 600 characters" > 
+    </textarea>
+  </label>
+  <br />
 
-<textarea> type="text" name="question" </textarea> 
+  <button class="btn"> Submit </button>
 
-</form>!-->
-</div> 
+  </form>
+  <div>
+
+      <a routerLink="/"> Back to Home </a>
+  
+  </div>
+
