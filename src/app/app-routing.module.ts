@@ -15,7 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "icclist", component: IccListComponent},
-  {path: "icc", component: IccComponent},
+  {path: "icclist/:iccId", component: IccComponent},
   {path: "tool", component: ToolComponent},
   {path: "contact", component: ContactComponent},
   {path: "userlog", component: UserlogComponent},

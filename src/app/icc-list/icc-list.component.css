@@ -1,11 +1,26 @@
 
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  align-content: center;
+  align-items: center;
+  padding: none;
+  margin: auto;
+  color: #4b8092;
+}
+
+
 .blockIcc {
-  height:80px;
-  width: 80px;
-  display: flex;
-  align-content: space-around;
-  flex-wrap: nowrap;
+  padding: none;
+  height:100px;
+  width: 100px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  flex-direction: row;
   border: 2px, #4b8092;
   background-color: white;
   border-radius: 20px;
 }
+
