@@ -1,3 +1,71 @@
-<p>
-  userlog works!
-</p>
+
+<div class="userlog">
+    
+    <div class="login">
+      <p> Registered member? </p>
+      <form (ngSubmit)="loginSubmit()">
+          <label> 
+            Email:
+            <input [(ngModel)]="loginForm.email" name="email" type="email" placeholder="jessica@jones.com" />
+          </label>
+          <br />
+        
+          <label> 
+            Password:
+            <input [(ngModel)]="loginForm.loginPassword" name="loginPassword" type="password" placeholder="we won't tell" />
+          </label>
+          <br />
+        
+          <button class="btn-in btn"> Log In </button>
+        
+        </form>
+     </div>
+
+   <div class="signup">
+      <p> First contact? </p>
+
+      <form (ngSubmit)="signupSubmit()">
+          <label>
+            First Name:
+            <input [(ngModel)]="signupForm.firstName" name="firstName" type="text" placeholder="First Name" />
+          </label>
+        
+        <label>
+          Last Name:
+          <input [(ngModel)]="signupForm.lastName" name="lastName" type="text" placeholder="Last Name" />
+        </label>
+        
+        <label>
+          Company:
+          <input [(ngModel)]="signupForm.company" name="company" type="text" placeholder="Company" />
+        </label>
+        
+        <label>
+          Position:
+          <input [(ngModel)]="signupForm.position" name="Position" type="text" placeholder="Position" />
+        </label>
+      
+        <label>
+          Email
+          <input [(ngModel)]="signupForm.email" name="email" type="email" placeholder="email@example.com">
+        </label>
+          
+        <label>
+          Phone Number:
+          <input [(ngModel)]="signupForm.phoneNumber" name="company" type="text" placeholder="Please include country code" />
+        </label>
+        
+        <label>
+          Password:
+          <input [(ngModel)]="signupForm.originalPassword" name="originalPassword" type="password" placeholder="your secret is safe with us">
+        </label>
+        
+        <button class="btn-up btn"> Sign up </button>
+        
+        </form>
+      </div>
+  </div>
+
+  <div>
+     <a routerLink="/contact"> Back </a>
+  </div>

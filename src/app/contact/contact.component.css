@@ -1,0 +1,31 @@
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  align-content: center;
+  align-items: center;
+  padding: none;
+  margin: auto;
+  color: white;
+  font-size: 1.2em;
+}
+
+.btn {
+  display: block;
+  border-radius: 5px;
+  border:none;
+  background-color: #4b8092;
+  margin: auto;
+  padding: 10px
+}
+
+em {
+  font-weight: bold;
+  font-style: initial;
+  font-size: 1em;
+}
+span {
+  color:#086A87;
+  font-size:1.1em;
+}
+

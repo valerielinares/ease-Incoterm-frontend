@@ -4,10 +4,10 @@
   top: 60px;
   width: 600px;
   margin-left: 50px;
-  background-color: lightgrey;
   height: 520px;
-  border: 5px;
-  border: #4b8092;
+  border-left: solid 2px  #4b8092;
+  border-right: solid 2px  #4b8092;
+  border-bottom: solid 2px  #4b8092;
   border-radius: 20px;
   z-index: 2;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -15,6 +15,7 @@
 
 .blockMain {
   display: flex;
+  flex-direction: row;
   padding: 10px;
   width: 580px;
   height: 430px;
@@ -24,9 +25,14 @@
 
 .blockTop {
   background-color: white;
-  height: 70px;
+  height: 80px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+body {
+  color: #4b8092;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer {
@@ -44,7 +50,6 @@ h3, p {
   padding: none;
   margin: none;
   display: inline-block;
-  align-items: center;
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }

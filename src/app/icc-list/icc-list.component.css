@@ -19,7 +19,7 @@ a {
   text-decoration: none;
   margin: 10px;
   flex-direction: row;
-  border: 2px, #4b8092;
+  border: solid 1px #4b8092;
   background-color: white;
   border-radius: 20px;
 }

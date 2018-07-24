@@ -33,7 +33,7 @@ check() {
 postLogin(loginInfo: LoginSubmission) {
   return this.myHttpServ
     .post(
-      `${backendUrl}/api/contact/login`, 
+      `${backendUrl}/api/login`, 
       loginInfo,
       { withCredentials: true } // send cookies across domains
     )
@@ -49,7 +49,7 @@ postLogin(loginInfo: LoginSubmission) {
 postSignup(signupInfo: SignupSubmission) {
   return this.myHttpServ
     .post(
-      `${backendUrl}/api/contact/signup`,
+      `${backendUrl}/api/signup`,
       signupInfo,
       { withCredentials: true } // send cookies across domains
     )
