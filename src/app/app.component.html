@@ -1,16 +1,33 @@
 <header>
   <link href="https://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro|Ubuntu+Condensed" rel="app.component">
-  <h3>
+  <h2 class="title">
     Welcome to {{ title }}!
-  </h3>
+  </h2>
 </header>
 
 <body> 
   <div class="blockMainContainer">
-    <div class="blockNav"> 
-      <a href> <img class="logo" src="http://www.radiocoaching.info/wp-content/uploads/2013/06/Globe-terrestre.jpg" />
-      </a> 
-    </div>  
+
+    <nav> 
+      <div class="blockNav"> 
+        <a href> <img class="logo" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/logo.png?raw=true" />
+          </a> 
+        <a href> <img class="icon" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/homeBtn.png?raw=true" />
+          </a>
+        <a href> <img class="iconL" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/iccIcon.png?raw=true" />
+          </a>
+        <a href> <img class="iconS" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/toolIcon.png?raw=true" />
+          </a>
+        <a href> <img class="icon" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/contactIcon.png?raw=true" />
+          </a>   
+      </div>          
+      <div class="blockLog">
+        <p class="welcome"> Welcome </p>
+        <a href> <img class="iconS" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/logoutIcon.png?raw=true" />
+          </a>
+      </div>
+    </nav>  
+
     <div class="blockContent">
       <router-outlet></router-outlet>
     </div>
