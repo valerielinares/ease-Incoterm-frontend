@@ -25,9 +25,9 @@
   margin: auto;
   width: 800px;
   height: 600px;
-  border-left: solid 2px  rgba(75, 128, 146, 0.9);
+  /*border-left: solid 2px  rgba(75, 128, 146, 0.9);
   border-right: solid 2px rgb(75, 128, 146, 0.5);
-  border-bottom: solid 2px rgba(75, 128, 146, 0.5);
+  border-bottom: solid 2px rgba(75, 128, 146, 0.5);*/
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   z-index: 52;
@@ -48,11 +48,13 @@
 
 body {
   height: 100%;
-  width: 98vw;
-  padding: 0;
-  margin: 0 auto;
+  width: 100vw;
+  padding-top: 2px;
+  margin: auto;
   line-height: 1;
-  background-image: url("https://cdn.pixabay.com/photo/2016/07/12/06/25/background-1511509_960_720.jpg");
+  background-image: url("https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/abstrait-backround-terre.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #4b8092;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -67,16 +69,20 @@ body {
 
 footer {
   position: relative;
-  top: 20px;
-  height: 30px;
-  width: 100%;
-  background-color: lightgrey;
+  width: 100vw;
+  margin: auto;
+  padding: 10px;
+  top: 1px;
+  height: 40px;
+  background-color:#ff9900;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
 header {
+  margin: auto;
+  width: 100vw;
+  padding: 10px;
   height: 130px;
-  width: 100%;
   background-color: #000033;
   z-index: 1;
 }
@@ -128,7 +134,7 @@ nav {
 .welcome {
   display: inline-block;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:  #4b8092;
+  color: #ff9900;
   font-size: 1.1em;
   line-height: 1.3;
   font-weight: bold;

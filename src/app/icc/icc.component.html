@@ -1,16 +1,14 @@
-<body> 
-<h2> {{iccItem?.iccShortCode}} </h2>
+<div class="component"> 
+    <p class="iccName"> {{iccItem?.iccShortCode}} ({{iccItem?.iccFulName}})  <p>
 
-<h3> Full name: {{iccItem?.iccFulName}} </h3>
+        <p> Definition <p>
 
-<h4> Definition </h4>
-
-<p> {{iccItem?.iccDefinition}}  </p>
-
-<div>
-
-    <a routerLink="/icclist"> Back to List </a>
+        <p> {{iccItem?.iccDefinition}}  </p>
 
 </div>
-</body>
+
+<div>
+    <a routerLink="/icclist"> Back to List </a>
+</div>
+
       
