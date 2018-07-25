@@ -19,11 +19,11 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  align-content: center;
+  align-content: flex-end;
   align-items: center;
   height: 100px;
-  width: 30%;
-  border-top-left-radius: 20px;
+  width: 40%;
+  max-width: 40%;
   border-top-right-radius: 20px;
 }
 
@@ -44,7 +44,8 @@
   align-content: center;
   align-items: center;
   height: 100px;
-  width: 70%;
+  width: 60%;
+  max-width: 70%;
   border-top-left-radius: 20px;
 }
 
@@ -103,9 +104,10 @@ nav {
   display: flex;
   background-color: white;
   height: 100px;
-  width: 98%;
+  width: 97%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin: auto;
   }
 
 
@@ -119,8 +121,11 @@ nav {
 
 .welcome {
   display: inline-block;
-  color:black;
-  font-size: 1.2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:  #4b8092;
+  font-size: 1.1em;
+  line-height: 1.3;
+  font-weight: bold;
   padding-right: 20px;
 }
 

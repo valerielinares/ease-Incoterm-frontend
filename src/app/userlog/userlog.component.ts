@@ -46,8 +46,4 @@ export class UserlogComponent implements OnInit {
       })
   }
 
-
-
-
-
 }
