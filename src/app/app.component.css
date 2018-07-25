@@ -1,15 +1,16 @@
 
-.blockContainer {
-  position: absolute;
-  top: 60px;
-  width: 600px;
-  margin-left: 50px;
-  height: 520px;
-  border-left: solid 2px  #4b8092;
-  border-right: solid 2px  #4b8092;
-  border-bottom: solid 2px  #4b8092;
-  border-radius: 20px;
-  z-index: 2;
+.blockMainContainer {
+  background-color: red;
+  position: relative;
+  top: -60px;
+  margin: auto;
+  width: 800px;
+  height: 600px;
+  border-left: solid 2px  rgba(75, 128, 146, 0.9);
+  border-right: solid 2px rgb(75, 128, 146, 0.5);
+  border-bottom: solid 2px rgba(75, 128, 146, 0.5);
+  border-radius: none;
+  z-index: 52;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
@@ -18,28 +19,39 @@
   flex-direction: row;
   padding: 10px;
   width: 580px;
-  height: 430px;
+  height: 500px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  padding-bottom:50 px;
 }
 
-.blockTop {
+.blockNav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
   background-color: white;
-  height: 80px;
+  height: 100px;
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 body {
+  height: 100%;
+  width: 100vw;
+  padding: 0 10px;
+  margin: 0 auto;
+  line-height: 1;
   color: #4b8092;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer {
   position: absolute;
-  top: 600px;
   height: 30px;
   width: 100%;
+  bottom: 0;
   background-color: #4b8092;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em;
@@ -63,9 +75,13 @@ header {
   z-index: 1;
 }
 
-.logo {
-  height: 50px;
-  padding-left: 15px;
-  padding-top: 10px;
-  border-top-right-radius: 30px;
+.icon {
+  height: 75px;
+  width:75px;
 }
+.logo {
+  height: 75px;
+  width: 75px;
+  border-top-left-radius: 20px;
+}
+
