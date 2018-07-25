@@ -1,6 +1,7 @@
+<div class="component"> 
 <ul> 
     <li class="blockIcc" *ngFor="let oneIcc of iccs"> 
       <h3> <a [routerLink]="['/icclist', oneIcc._id]"> {{oneIcc.iccShortCode}} </a> </h3>
     </li>
 </ul>      
- 
+</div>

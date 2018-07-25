@@ -16,13 +16,13 @@
           </a>
         <a [routerLink]="['/icclist']"> <img class="iconL" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/iccIcon.png?raw=true" />
           </a>
-        <a [routerLink]="['/tool']"> <img class="iconS" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/toolIcon.png?raw=true" />
+        <a [routerLink]="['/tool']"> <img class="iconS" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/toolIcon2.png?raw=true" />
           </a>
         <a [routerLink]="['/contact']"> <img class="icon" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/contactIcon.png?raw=true" />
           </a>   
       </div>          
       <div class="blockLog" *ngIf="myAuthServ.currentUser">
-        <p class="welcome"> Welcome, <br /> {{myAuthServ.currentUser.lastName}}! </p>
+        <p class="welcome"> Welcome, <br /> Mrs./Mr. {{myAuthServ.currentUser.lastName}}! </p>
         <a (click)="logoutClick()"> <img class="iconS" src="https://github.com/valerielinares/ease-Incoterm-frontend/blob/master/src/app/images/logoutIcon.png?raw=true" />
           </a>
       </div>
