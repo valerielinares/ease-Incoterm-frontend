@@ -17,10 +17,13 @@ a {
 }
 
 .contactIntro {
-  margin: 40px auto 0px auto;
-  width: 98%;
- 
-}
+  width: 620px;
+  margin: auto;
+  line-height: 1.5em;
+  color:  #000033;
+  font-size: 1.2em;
+  font-weight: bolder;
+ }
 
 em {
   font-weight: bold;
@@ -28,21 +31,15 @@ em {
   font-size: 1.3em;
 }
 
-h3 { 
-  padding-left: 10px;
-  color:  #000033;
-}
-
 .locked {
   background-color: grey;
   opacity: 0.5;
   width: 98%;
-  height: 50%;
+  height: 55%;
   margin: auto;
 }
 
 span {
   color: #ff9900;   
-  font-size:105%;
-}
+  }
 

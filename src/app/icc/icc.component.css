@@ -12,9 +12,14 @@ a {
   right: 10px;
   } 
 
-.component {
-  margin-top: 0;
+.blockDefinition {
+  width: 80%;
   margin: auto;
+  padding: none;
+}
+
+.component {
+  margin: 10px auto;
   padding: 10px;
   background-color: rgba(75, 128, 146, 0.5);
   align-items: center;
@@ -26,13 +31,17 @@ a {
 
 .definition {
   font-weight: bold;
-  font-size:1.2em;
+  font-size:1.2em;  
 }
 
 .iccName {
   font-size: 1.5em;
   font-weight: bolder;
   color:#ff9900;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: center;
+}
+
+.definition {
+  font-size:1.1em;  
 }

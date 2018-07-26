@@ -28,6 +28,7 @@ a {
   background-color:  #000033;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom: solid 4px #ff9900;   
   }
 
 .blockSelectLink {
