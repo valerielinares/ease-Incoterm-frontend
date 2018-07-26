@@ -1,14 +1,23 @@
-        <h4> We can provide you with <span>taylored information</span> and <span>training</span>.
-        </h4>   
+<div class="contactIntro"> 
+        <h3> Still have questions? We can provide you with <span>taylored information</span> and <span>training</span>.
+        </h3>   
+</div>
 
-                <span *ngIf="myAuthServ.currentUser">
-                   <p> <app-request> </app-request>  </p>  
-                </span>
+
+
+        <span *ngIf="myAuthServ.currentUser">
+                <p> <app-request> </app-request>  </p>  
+        </span>
  
-                <button  *ngIf="!myAuthServ.currentUser" class="btn">  
-                        <a routerLink="/userlog"> Please  <em>Log In </em> or <em> Sign Up </em>  <br/> to send your question to our consulting team </a>
-                </button>
-              
+        <span *ngIf="!myAuthServ.currentUser" > 
+        <button class="btn">  
+                <a routerLink="/userlog"> Please  <em>Log In </em> or <em> Sign Up </em>  <br/> to send your question to our consulting team </a>
+        </button>
 
+        <div class="locked"> 
+                <app-request> </app-request> 
+        </div>  
+              
+        </span>
               
    

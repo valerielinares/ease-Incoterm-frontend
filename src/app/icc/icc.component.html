@@ -1,14 +1,10 @@
-<div class="component"> 
-    <p class="iccName"> {{iccItem?.iccShortCode}} ({{iccItem?.iccFulName}})  <p>
+<p class="iccName"> {{iccItem?.iccShortCode}} ({{iccItem?.iccFulName}}) <p>
 
-        <p> Definition <p>
+    <div class="component"> 
+        <p class="definition"> Defintion </p>
+        <p class="iccDefinition"> {{iccItem?.iccDefinition}}  </p>
+    </div>
 
-        <p> {{iccItem?.iccDefinition}}  </p>
-
-</div>
-
-<div>
+<div class="backTo">
     <a routerLink="/icclist"> Back to List </a>
 </div>
-
-      
