@@ -29,7 +29,5 @@ logoutClick() {
       alert("Sorry! There was a problemn with your log out");
       console.log(err);
     });
+  }  
 }
-
-
-
