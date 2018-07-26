@@ -1,26 +1,21 @@
+<div class="welcome" *ngIf="myAuthServ.currentUser"> 
+  <p>
+    Dear {{myAuthServ.currentUser.firstName}} {{myAuthServ.currentUser.lastName}}, please type in your question:
+  <p>
+</div>
 
-
-   <h4>
-        <span *ngIf="myAuthServ.currentUser">
-        Dear {{myAuthServ.currentUser.firstName}} {{myAuthServ.currentUser.lastName}}, please type in your question:
-        </span>
-  </h4>
-
+<div class="component"> 
   <form (ngSubmit)="questionSubmit()"> 
-    <label> 
-      <h5> Your question here: </h5>
-      
-      <textarea [(ngModel)]="requestForm.question" type="text" name="question" placeholder="10 to 600 characters" > 
+    <textarea [(ngModel)]="requestForm.question" type="text" name="question" placeholder="10 to 600 characters" > 
     </textarea>
-  </label>
-  <br />
 
-  <button class="btn"> Submit </button>
-
-  </form>
-  <div>
-
-      <a routerLink="/"> Back to Home </a>
-  
+  <div class="xxxbtn"> 
+   <button class="btn"> Submit </button>
   </div>
+  </form>
+</div>  
+
+<div class="backTo">
+      <a routerLink="/"> Back to Home </a>
+</div>
 

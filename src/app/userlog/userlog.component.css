@@ -1,81 +1,78 @@
 
 a {
-  position: absolute;
-  top: 470px;
-  padding-left: 425px;
-  font-style: italic;
-  font-size: 0.9em;
-  display: inline-block;
   text-decoration: none;
-  align-content: center;
-  align-items: center;
-  padding: none;
-  margin: auto;
-  color: #4b8092;
-}
+  font-weight: bold;
+  color:  #000033;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+ 
+.backTo {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  right: 10px;
+  } 
 
-
-
-body {
-  line-height: 1;
+.component {  
+  width: 98%;
+  max-height:450px;
+  margin:auto;
+  position: relative;
 }
 
 .btn {
   margin: 10px auto;
+  padding: 3px;
   border-radius: 5px;
   border:none;
-  width: 80px;
-  height: 30px;
+  width: 100px;
   color: white;
-}
-
-.btn-in {
-  background-color: #4b8092;
-  }
-
-.btn-up{
-  background-color:#4b8092;
+  font-weight: bold;
+  font-size: 1em;
+  background-color:#ff9900;
 }
 
 .callin {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-align: center;
+  color:#ff9900;
 }
 
 label {
-  font-size: 0.8em;
-  width: 202px;
+  margin-left: 10%;
+  font-size: 0.7em;
+  width: 100%;
   display: inline-block;
   text-align: left;
-}
+  color:  #000033;
+  font-size: 1em; 
+  }
 
 input {
-  width: 220px;
+  border: none;
+  border-block-end: grey 1px solid;
+  background-color: rgb(241, 237, 237);
+  width: 75%;
+  height: 20px;
   font-style: italic;
-  color: lightgray;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  padding-left: 5px;
 }
 
 .login {
     position: relative;
     vertical-align: top;
     display : inline-block;
-    width: 55%;
+    width: 50%;   
    }
-
-p {
-  text-align: center;
-}
-
+   
 .signup {
   position: relative;
   vertical-align: top;
   display : inline-block;
-  width: 45%;
+  width: 50%;
+  height:450px;
   }
-
-.userlog {  
-  width: 580px;
-  text-align: center;
-  position: relative;
-}

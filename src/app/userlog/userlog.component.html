@@ -1,49 +1,49 @@
 
-<div class="userlog">
+<div class="component">
  
      <div class="signup">
       <p class="callin"> First contact? </p>
 
       <form (ngSubmit)="signupSubmit()">
           <label>
-            First Name:
+            First Name: <br/>
             <input [(ngModel)]="signupForm.firstName" name="firstName" type="text" placeholder="First Name" />
           </label>
           <br />
           
         <label>
-          Last Name:
+          Last Name:<br/>
           <input [(ngModel)]="signupForm.lastName" name="lastName" type="text" placeholder="Last Name" />
         </label>
         <br />
          
         <label>
-          Company:
+          Company:<br/>
           <input [(ngModel)]="signupForm.company" name="company" type="text" placeholder="Company" />
         </label>
         <br />
         
         <label>
-          Position:
+          Position:<br/>
           <input [(ngModel)]="signupForm.position" name="Position" type="text" placeholder="Position" />
         </label>
         <br />
       
         <label>
-          Email
+          Email<br/>
           <input [(ngModel)]="signupForm.email" name="email" type="email" placeholder="email@example.com">
         </label>
         <br />
          
         <label>
-          Phone Number:
+          Phone Number:<br/>
           <input [(ngModel)]="signupForm.phoneNumber" name="company" type="text" placeholder="Please include country code" />
         </label>
         <br />
         
         <label>
-          Password:
-          <input [(ngModel)]="signupForm.originalPassword" name="originalPassword" type="password" placeholder="your secret is safe with us">
+          Password:<br/>
+          <input [(ngModel)]="signupForm.originalPassword" name="originalPassword" type="password" placeholder="password">
         </label>
         <br />
 
@@ -58,14 +58,14 @@
           <p class="callin"> Registered member? </p>
           <form (ngSubmit)="loginSubmit()">
               <label> 
-                Email:
-                <input [(ngModel)]="loginForm.email" name="email" type="email" placeholder="jessica@jones.com" />
+                Email:<br/>
+                <input [(ngModel)]="loginForm.email" name="email" type="email" placeholder="email@example.com" />
               </label>
               <br />
             
               <label> 
-                Password:
-                <input [(ngModel)]="loginForm.loginPassword" name="loginPassword" type="password" placeholder="we won't tell" />
+                Password:<br/>
+                <input [(ngModel)]="loginForm.loginPassword" name="loginPassword" type="password" placeholder="password" />
               </label>
               <br />
             <div class="btn"> 
@@ -75,7 +75,7 @@
          </div>
   </div>
   
-  <div>
+  <div class="backTo">
       <a routerLink="/contact"> Back to contact form </a>
    </div>
 
