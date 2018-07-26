@@ -9,7 +9,7 @@ import { AuthService } from '../api/auth.service';
 export class ContactComponent implements OnInit {
 
   constructor(
-    private myAuthServ: AuthService
+    public myAuthServ: AuthService
   ) { }
 
   ngOnInit() {
