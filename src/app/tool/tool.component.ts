@@ -5,7 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tool.component.html',
   styleUrls: ['./tool.component.css']
 })
-export class ToolComponent implements OnInit {
+
+ 
+export class ToolComponent 
+
+implements OnInit {  
 
   constructor() { }
 
@@ -15,53 +19,68 @@ export class ToolComponent implements OnInit {
   }
 
   loadScript(url){
-    var costs = document.getElementsByName('costop');
-    var iccs = document.getElementsByName('icc'); 
+    // var costs : HTMLInputElement = document.getElementsByName('costop')  as HTMLInputElement ;
+    
+    var costs = <any> document.getElementsByName('costop');
+    var iccs  = <any> document.getElementsByName('icc') ;
+
+    // var costs  = document.getElementsByName('costop') ;
+    // var iccsLength   = document.getElementsByName('icc') ;
 
       for(let i=0; i< costs.length; i++) {
         costs[i].addEventListener('click', function() {
-          if (costs[i].checked === true) {
-                   
-             for(let x = i; x >= 0; x--){
-               costs[x].checked = true;
-               //console.log(costs[x].checked)
-               
+          
+          
+          if (costs[i].checked === true) {          
+            for (let y=0; y< iccs.length; y++) {
+              iccs[y].checked = false;
+            }
+             
+            for(let x = i; x >= 0; x--){
+              costs[x].checked = true;
+              //console.log(costs[x].checked)
+              iccs[i].checked = true; 
+
              }
             } else {
           for(let x = i+1; x > 1 && x < costs.length ; x++){
+            for (let y=0; y< iccs.length; y++) {
+              iccs[y].checked = false;
+            }
+
             costs[x].checked = false;
             costs[i].checked = true;
+            iccs[i].checked = true;
             //console.log(costs[x].checked)
           }
         };
        }   
       ) 
     }
-
+/* icc part */
     for(let i=0; i< iccs.length; i++) {
       iccs[i].addEventListener('click', function() {
+        
+        
         if (iccs[i].checked === true) {
-                 
-           for(let x = i; x >= 0; x--){
-             iccs[x].checked = true;
-             //console.log(iccs[x].checked)
-             
+
+          for (let y=0; y< costs.length; y++) {
+            costs[y].checked = false;
+            }
+          for(let x = i; x >= 0; x--){
+            costs[x].checked = true; 
            }
-          } else {
-        for(let x = i+1; x > 1 && x < iccs.length ; x++){
-          iccs[x].checked = false;
-          iccs[i].checked = true;
-          //console.log(iccs[x].checked)
-        }
+          for (let z=0; z < iccs.length; z++) {
+            iccs[z].checked = false;
+            iccs[i].checked = true;
+          }
+          
       };
      }   
     ) 
   }
 
-
-
-
-
+/* icc part */
 
   }
 }
