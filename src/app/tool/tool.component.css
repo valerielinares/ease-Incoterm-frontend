@@ -14,7 +14,7 @@ a {
 } 
 
 .component {  
-  width: 95%;
+  width: 90%;
   height:450px;
   margin:auto;
   position: relative;
@@ -24,30 +24,37 @@ a {
 }
 
 .costs {
-  width: 50%;
+  width: 63%;
   height: 100%;
 }
 
 .iccs {
  
-  width: 50%;
+  width: 37%;
   height: 100%;
 }
 
 /* checkboxes */
 fieldset {
-  border: none;
+  border: none;  
 }
 
 legend {
   background-color: #ff9900;
-  height: 30px;
-  width: 200px;
   color: white;
+  height: 30px;
   line-height: 30px;
   text-align: center;
   border-radius: 5px;
 }
+
+.legendCost {
+  width: 330px;
+}
+
+.legendIcc {
+  width: 200px;
+ }
 
 input {
   margin:  10px 10px 10px  0px; 
