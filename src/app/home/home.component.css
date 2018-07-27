@@ -5,7 +5,7 @@ a {
   text-align: center;
   vertical-align: center;
   margin: auto;
-  line-height: 1.5;
+  line-height: 2;
   font-weight: bold;
   color:  #000033;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,7 +28,7 @@ a {
   background-color:  #000033;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-bottom: solid 4px #ff9900;   
+  border-bottom: solid 4px #ff9900;
   }
 
 .blockSelectLink {
@@ -41,7 +41,7 @@ a {
   }
 
 .component {
-  margin-top: 15%;
+  margin-top: 0%;
   background-color: rgba(75, 128, 146, 0.5);
   display: flex;
   flex-direction: row;
@@ -50,3 +50,18 @@ a {
   width: 100%;
   height: 60%;
 }
+
+.title {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color:#ff9900;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  text-align: center;
+  color:  #000033;
+}
+
